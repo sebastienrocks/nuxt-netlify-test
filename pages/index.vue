@@ -7,6 +7,9 @@
       <h2 class="subtitle">
         New portfolio coming soon
       </h2>
+      <h2 class="m-subtitle">
+        looks like utter shit on mobile  
+      </h2>
     </div>
   </section>
 </template>
@@ -33,11 +36,31 @@ export default {}
   letter-spacing: 1px;
 }
 
-.subtitle {
+.subtitle,
+.m-subtitle {
   font-weight: 300;
   font-size: 36px;
   color: #526488;
   word-spacing: 5px;
   padding-bottom: 15px;
+}
+
+.m-subtitle {
+  display: none;
+  font-size: 22px;
+}
+
+@media(max-width: 720px) {
+  .title {
+    display: none;
+  }
+
+  .subtitle {
+    display: none;
+  }
+
+  .m-subtitle {
+    display: block;
+  }
 }
 </style>
