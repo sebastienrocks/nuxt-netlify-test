@@ -1,0 +1,34 @@
+<template>
+  <div class="projects__wrapper">
+      <ProjectPreview :projects="projects" @selected-project="showOverlay" />
+      <ProjectOverlay :projects="projects" :active-project="activeProject" @close-overlay="hideOverlay" />
+  </div>
+</template>
+
+<script>
+import Vue from 'vue';
+import { Component, Prop } from 'nuxt-property-decorator';
+
+import ProjectPreview from "./project-preview";
+import ProjectOverlay from "./project-overlay";
+
+@Component({
+  components: {
+    ProjectPreview,
+    ProjectOverlay
+  }
+})
+export default class Projects extends Vue {
+  @Prop({ type: Array }) projects;
+  activeProject = 0;
+
+  hideOverlay() {
+    this.activeProject = 0;
+  }
+
+  showOverlay(index) {
+    this.activeProject = index + 1;
+  }
+}
+
+</script>

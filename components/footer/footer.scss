@@ -1,0 +1,100 @@
+$footer-padding-top: calc(120px + #{$header-neg});
+$footer-padding-bottom: 180px;
+$footer-padding-sides: 20px;
+$footer-font-size: 60px;
+$footer-line-height: 86px;
+
+.footer {
+  &__wrapper {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding: $footer-padding-top $footer-padding-sides $footer-padding-bottom $footer-padding-sides;
+    @include background-gradient();
+
+    @media(max-width: 768px) {
+      $header-neg: 75px;
+      $footer-padding-top: calc(60px + #{$header-neg});
+      $footer-padding-bottom: 90px;
+
+      padding: $footer-padding-top $footer-padding-sides $footer-padding-bottom $footer-padding-sides;
+
+    }
+  }
+
+  &__center {
+    color: $white;
+  }
+
+  &__text {
+    display: inline-block;
+    vertical-align: top;
+    width: 100%;
+    font-size: $footer-font-size;
+    line-height: $footer-line-height;
+
+    @media(max-width: 768px) {
+      $footer-font-size: 30px;
+      $footer-line-height: 43px;
+
+      font-size: $footer-font-size;
+      line-height: $footer-line-height;
+    }
+  }
+
+  &__text--small {
+    display: inline-block;
+    vertical-align: top;
+    width: 100%;
+    font-size: 24px;
+    color: $white;
+    margin: 0 0 50px 0;
+
+    @media(max-width: 768px) {
+      font-size: 18px;
+    }
+  }
+
+  &__text--tiny {
+    display: inline-block;
+    vertical-align: top;
+    width: 100%;
+    font-size: 18px;
+    color: $white;
+    margin-bottom: 15px;
+  }
+
+  &__text--blue {
+    font-weight: $semibold;
+    color: $dark-blue;
+  }
+
+  &__social {
+    display: inline-block;
+    vertical-align: top;
+    width: 100%;
+    margin-top: 50px;
+  }
+
+  &__social-icon {
+    display: inline-block;
+    vertical-align: top;
+    width: auto;
+    opacity: .4;
+  }
+
+  &__social-icon + &__social-icon {
+    margin: 0 0 0 20px;
+  }
+
+  &__icon {
+      fill: $white;
+      height: 24px;
+      transform: translateY(0);
+      transition: all 125ms ease;
+
+      &:hover {
+          transform: translateY(-3px);
+      }
+  }
+}

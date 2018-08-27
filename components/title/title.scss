@@ -1,0 +1,11 @@
+.title {
+  &__text {
+    font-size: 30px;
+    font-weight: $normal;
+    color: $dark-blue;
+  }
+
+  &__text--red {
+    color: $dark-red;
+  }
+}

@@ -1,0 +1,28 @@
+$white         : #ffffff;
+$bg-white      : #cdd2e0;
+$black         : #1d1d1d;
+$light-grey    : rgba($black, .5);
+$dark-grey     : rgba($black, .7);
+$dark-blue     : #373f61;
+$dark-red      : #f05656;
+
+$bright-green  : #63d56d;
+$bright-purple : #9b59b6;
+$bright-pink   : #ec3971;
+$bright-orange : #e76055;
+$bright-yellow : #f3b459;
+$bright-blue   : #00c2f4;
+
+// Fonts //
+$font     : 'Nunito', arial, sans-serif;
+$normal   : 400;
+$semibold : 600;
+$bold     : 700;
+
+// Sizes //
+$header-neg     : 125px;
+$p-margin       : 30px;
+$section-margin : 50px;
+$grid-padding   : 15px;
+$big-card       : 310px;
+$small-card     : ($big-card/2)-($grid-padding/2);

@@ -1,0 +1,259 @@
+.projects {
+  &__wrapper {
+    position: relative;
+    overflow: hidden;
+  }
+}
+
+.grid {
+  display: grid;
+  height: 100%;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  grid-gap: 15px 15px;
+  grid-template-areas: "first first second" "first first third" "fourth sixth sixth" "fifth sixth sixth";
+
+  &__element {
+    position: relative;
+    z-index: 1;
+    display: inline-block;
+    vertical-align: top;
+    width: 100%;
+    text-align: center;
+
+    &:before {
+      content: '';
+      position: absolute;
+      z-index: 2;
+      height: 100%;
+      width: 100%;
+      top: 0;
+      left: 0;
+      background: radial-gradient(ellipse at center, $light-grey 0%, $dark-grey 100%);
+      opacity: 0;
+      cursor: pointer;
+
+      transition: all 175ms ease;
+    }
+
+    &:after {
+      content: 'See More';
+      position: absolute;
+      z-index: 3;
+      top: calc(50% + 8px);
+      left: 0;
+      height: 16px;
+      line-height: 16px;
+      width: 100%;
+      opacity: 0;
+      color: $white;
+      font: $font;
+      font-weight: $semibold;
+      font-size: 16px;
+      cursor: pointer;
+
+      transition: all 275ms ease;
+    }
+
+    &:hover {
+      &:before {
+        opacity: 1;
+      }
+
+      &:after {
+        top: calc(50% - 8px);
+        opacity: 1;
+      }
+    }
+  }  
+
+  &__element--small {
+    height: $small-card;
+    line-height: $small-card;
+
+    .logo {
+      display: inline-block;
+      vertical-align: middle;
+      fill: $white;
+      height: 65px;
+      max-width: 80%;
+    }
+  }
+
+  &__element--big {
+    height: $big-card;
+    line-height: $big-card;
+
+    .logo {
+      display: inline-block;
+      vertical-align: middle;
+      fill: $white;
+      height: 50px;
+      max-width: 80%;
+
+      &.maison {
+        height: 80px;
+      }
+    }
+  }
+
+  &__01 {
+    grid-area: first;
+    background-color: #00c2f4;
+  }
+
+  &__02 {
+    grid-area: second;
+    background-color: #9b59b6;  
+  }
+
+  &__03 {
+    grid-area: third;
+    background-color: #ec3971;
+  }
+
+  &__04 {
+    grid-area: fourth;
+    background-color: #e76055;
+  }
+
+  &__05 {
+    grid-area: fifth;
+    background-color: #f3b459;
+  }
+
+  &__06 {
+    grid-area: sixth;
+    background-color: #63d56d;  
+  }
+}
+
+.project {
+  &__container {
+    position: absolute;
+    z-index: 4;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    visibility: hidden;
+
+    a {
+      font-weight: $bold;
+      text-decoration: none;
+      color: $white;
+    }
+
+    &.show-project {
+      visibility: visible;
+
+      .project-inner-image {
+        transform: translateY(0) translateZ(0);
+        -webkit-backface-visibility: hidden;
+        -webkit-perspective: 1000;
+      }
+
+      .project-inner-container {
+        transform: translateY(0) translateZ(0);
+        -webkit-backface-visibility: hidden;
+        -webkit-perspective: 1000;
+      }
+    }
+  }
+
+  &-inner-image {
+    position: absolute;
+    z-index: 5;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    transform: translateY(-100%);
+    transition: all 275ms ease;
+    will-change: transform;
+  }
+
+  &-image {
+    object-fit: cover;
+    min-height: 100%;
+  }
+
+  &-inner-container {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 6;
+
+    width: 100%;
+    color: $white;
+    transform: translateY(110%);
+    transition: all 375ms ease;
+    transition-delay: 125ms;
+    will-change: transform;
+  }
+
+  &-angle-wrapper {
+    height: 100%;
+    min-height: 300px;
+    @include angle(before, true, 3.5deg);
+  }
+
+  &-close-link {
+    position: absolute;
+    right: 25px;
+    font-weight: $bold;
+  }
+
+  &-content {
+    display: inline-block;
+    vertical-align: top;
+    width: 100%;
+    padding: 35px 25px;
+    text-align: center;
+  }
+
+  &-logo {
+    display: inline-block;
+    vertical-align: top;
+    width: 100%;
+    height: 45px;
+    margin: 0 0 10px 0;
+    text-align: center;
+
+    &.maison {
+      height: 70px;
+    }
+  }
+
+  &-svg {
+    fill: $white;
+    height: 100%;
+  }
+
+  &-title {
+    font-size: 14px;
+    font-weight: $normal;
+    text-align: center;
+    margin: 0 0 35px 0;
+  }
+
+  &-text {
+    max-width: 70%;
+    font-size: 14px;
+    line-height: 22px;
+    margin: 0 auto 35px auto;
+  }
+
+  &-btn {
+    display: inline-block;
+    vertical-align: top;
+  }
+}
+
+.logo {
+  display: inline-block;
+  vertical-align: middle;
+  fill: $white;
+  height: 45px;
+  max-width: 60%;
+}

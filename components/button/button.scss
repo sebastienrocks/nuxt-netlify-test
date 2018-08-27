@@ -1,0 +1,60 @@
+.button {
+  position: relative;
+  top: 0;
+  background: $white;
+  padding: 20px 40px;
+  color: $dark-red;
+  font-size: 24px;
+  font-weight: $semibold;
+  box-shadow: 0 8px 10px -3px rgba(0,0,0,0.3);
+  transition: all 175ms ease;
+  text-decoration: none;
+  font-style: normal;
+
+  &__nudge {
+    display: inline-block;
+    vertical-align: top;
+    transform: translate3d(0, 0, 0) rotate(0deg);
+    transform-origin: center center;
+    animation: nudge 6000ms linear infinite;
+
+    &:hover {
+      animation: none;
+    }
+  }
+
+  &:hover {
+    top: 3px;
+    box-shadow: 0 0 0 0 rgba(0,0,0,0);
+  }
+}
+
+.project-button {
+  padding: 10px 20px;
+  color: $dark-red !important;
+  font-size: 14px;
+}
+
+@keyframes nudge {
+    94% {
+        transform: translate3d(0, 0, 0) rotate(0);
+    }
+    95% {
+        transform: translate3d(0, -4px, 0) rotate(0);
+    }
+    96% {
+        transform: translate3d(0, -4px, 0)rotate(-2deg);
+    }
+    97% {
+        transform: translate3d(0, -4px, 0) rotate(0);
+    }
+    98% {
+        transform: translate3d(0, -4px, 0) rotate(2deg);
+    }
+    99% {
+        transform: translate3d(0, -4px, 0) rotate(0);
+    }
+    100% {
+        transform: translate3d(0, 0px, 0) rotate(0);
+    }
+}

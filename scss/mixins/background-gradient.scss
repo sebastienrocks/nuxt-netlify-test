@@ -1,0 +1,7 @@
+@mixin background-gradient() {
+  background: #cdd2e0;
+  background-image: radial-gradient(circle at 99.17% 76.38%, #68769e, transparent 73%),
+                    radial-gradient(circle at 18.44% 2.67%, #68769e, transparent 83%),
+                    radial-gradient(circle at 44.9% 96.15%, #68769e, transparent 82%),
+                    radial-gradient(circle at 50% 50%, #fcfdff, #fcfdff 100%);
+}
