@@ -1,3 +1,4 @@
+
 module.exports = {
   head: {
     title: 'portfolio',
@@ -12,7 +13,6 @@ module.exports = {
     ]
   },
   css: [
-    '~/css/normalize.css',
     '~/scss/main.scss'
   ],
   loading: { color: '#3B8070' },
