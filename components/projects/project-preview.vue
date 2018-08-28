@@ -1,13 +1,9 @@
 <template>
-  <div class="grid">
-    <div v-for="(project, index) in projects"
-          :key="index"
-          class="grid__element"
-          :class="getClass(index)"
-          v-html="project.logo"
-          @click="selectProject(index)">
+    <div  class="grid__element"
+          :class="getClass(projectIndex)"
+          v-html="logo"
+          @click="selectProject(projectIndex)">
     </div>
-  </div>
 </template>
 
 <script>
@@ -16,15 +12,21 @@ import { Component, Prop } from 'nuxt-property-decorator';
 
 @Component
 export default class ProjectPreview extends Vue {
-  @Prop({ type: Array }) projects;
+  @Prop({ type: String }) logo;
+  @Prop({ type: Number }) projectIndex;
 
-  getClass(cardIndex) {
-    cardIndex = cardIndex + 1;
-    return (cardIndex === 1 || cardIndex === 6) ? `grid__element--big grid__0${cardIndex}` : `grid__element--small grid__0${cardIndex}`;
+  getClass(index) {
+    index = index + 1;
+    console.log("here", index)
+    return (index === 1 || index === 6) ? `grid__element--big grid__0${index}` : `grid__element--small grid__0${index}`;
   }
 
   selectProject(index) {
     this.$emit("selected-project", index);
+  }
+
+  created() {
+    console.log(this.projectIndex);
   }
 }
 </script>
