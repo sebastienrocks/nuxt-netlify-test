@@ -17,16 +17,11 @@ export default class ProjectPreview extends Vue {
 
   getClass(index) {
     index = index + 1;
-    console.log("here", index)
     return (index === 1 || index === 6) ? `grid__element--big grid__0${index}` : `grid__element--small grid__0${index}`;
   }
 
   selectProject(index) {
     this.$emit("selected-project", index);
-  }
-
-  created() {
-    console.log(this.projectIndex);
   }
 }
 </script>
