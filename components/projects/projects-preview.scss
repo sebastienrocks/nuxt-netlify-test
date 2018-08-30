@@ -1,0 +1,87 @@
+//TODO: Review naming
+
+$projects-preview-element-index: 1; //TODO: Test if needed
+$projects-preview-hover-background-index: 2;
+$projects-preview-hover-text-index: 3;
+$projects-preview-hover-background-transition: opacity 275ms ease;
+$projects-preview-hover-background-gradient: radial-gradient(ellipse at center, $light-grey 0%, $dark-grey 100%);
+$projects-preview-hover-text: 'See more';
+$projects-preview-hover-text-transition: all 175ms ease;
+$projects-preview-hover-text-height: 16;
+$projects-preview-hover-text-top: $projects-preview-hover-text-height / 2;
+$projects-preview-hover-text-height-px: #{$projects-preview-hover-text-height}px; //TODO: check this 
+$projects-preview-hover-text-initial-top-position: calc(50% + #{$projects-preview-hover-text-top}px); //TODO: check this
+$projects-preview-hover-text-after-top-position: calc(50% - #{$projects-preview-hover-text-top}px); //TODO: check this
+$projects-preview-logo-height: 65px;
+$projects-preview-logo-height: 80%;
+$projects-preview-logo-maisoon-height: 80px;
+
+.projects {
+  &__element {
+    position: relative;
+    z-index: $projects-preview-element-index;
+    width: 100%;
+    text-align: center;
+  
+    &:before {
+      content: '';
+      z-index: $projects-preview-hover-background-index;
+      height: 100%;
+      top: 0;
+      background: $projects-preview-hover-background-gradient;
+      transition: $projects-preview-hover-background-transition;
+    }
+
+    &:after {
+      content: $projects-preview-hover-text;
+      z-index: $projects-preview-hover-text-index;
+      height: $projects-preview-hover-text-height-px;
+      line-height: $projects-preview-hover-text-height-px;
+      top: $projects-preview-hover-text-initial-top-position;
+      color: $white;
+      font-family: $font;
+      font-weight: $semibold;
+      font-size: $font-size;
+
+      transition: $projects-preview-hover-text-transition;
+    }
+
+    &:before,
+    &:after {
+      position: absolute;      
+      width: 100%;
+      left: 0;
+      opacity: 0;
+      cursor: pointer;
+    }
+
+    &:hover:after,
+    &:hover:before {
+      opacity: 1;
+    }
+
+    &hover:after {
+      top: $projects-preview-hover-text-after-top-position;
+    }
+  }
+
+  &__logo {
+    fill: $white;
+    height: $projects-preview-logo-height;
+    max-width: $projects-preview-logo-height;
+  }
+
+  &__logo-maison {
+    height: $projects-preview-logo-maisoon-height;
+  }
+
+  &__logo--small {
+    height: $small-card;
+    line-height: $small-card;
+  }
+
+  &__logo--big {
+    height: $big-card;
+    line-height: $big-card;
+  }
+}

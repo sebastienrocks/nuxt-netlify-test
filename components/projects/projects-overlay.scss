@@ -1,0 +1,120 @@
+$projects-overlay-element-index: 4;
+$projects-overlay-element-image-transition: all 275ms ease;
+$projects-overlay-element-content-transition: all 375ms ease;
+$projects-overlay-element-content-transition-delay: 125ms;
+$projects-overlay-element-angle-min-height: 300px;
+$projects-overlay-element-content-padding: 35px 25px;
+$projects-overlay-element-logo-height: 45px;
+$projects-overlay-element-logo-margin: 0 0 10px 0;
+$projects-overlay-element-logo-maison-height: 70px;
+$projects-overlay-element-text-font-size: 14px;
+$projects-overlay-element-title-margin: 0 0 35px 0;
+$projects-overlay-element-text-line-height: 22px;
+$projects-overlay-element-text-margin: 0 auto 35px auto;
+
+.projects {
+  &__overlay {
+    position: absolute;
+    z-index: $projects-overlay-element-index;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    visibility: hidden;
+  }
+
+  &__overlay-close-link {
+    position: absolute;
+    right: 25px; $projects-overlay-element-close-link-right-position: 25px;
+    font-weight: $bold;
+    text-decoration: none;
+    color: $white;
+  }
+
+  &__overlay--show {
+    visibility: visible;
+  }
+
+  &__overlay--show &__overlay-image-container, //TODO: Check this output
+  &__overlay--show &__overlay-content-container {
+    transform: translateY(0) translateZ(0);
+    backface-visibility: hidden;
+    perspective: 1000;
+  }
+
+  &__overlay-image-container {
+    position: absolute;
+    z-index: 5;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    transform: translateY(-100%);
+    transition: $projects-overlay-element-image-transition;
+    will-change: transform;
+  }
+
+  &__overlay-image {
+    object-fit: cover;
+    min-height: 100%;
+  }
+
+  &__overlay-content-container {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 6; $projects-overlay-element-content-index: 6;
+    width: 100%;
+    color: $white;
+    transform: translateY(110%);
+    transition: $projects-overlay-element-content-transition; 
+    transition-delay: $projects-overlay-element-content-transition-delay; 
+    will-change: transform;
+  }
+
+  &__overlay-angle-wrapper {
+    height: 100%;
+    min-height: $projects-overlay-element-angle-min-height;
+    @include angle(before, true, 3.5deg);
+  }
+
+  &__overlay-content {
+    display: inline-block;
+    vertical-align: top;
+    width: 100%;
+    padding: $projects-overlay-element-content-padding;
+    text-align: center;
+  }
+
+  &__overlay-logo-wrapper {
+    display: inline-block;
+    vertical-align: top;
+    width: 100%;
+    height: $projects-overlay-element-logo-height;
+    margin: $projects-overlay-element-logo-margin;
+    text-align: center;
+  }
+
+  &__overlay-logo-wrapper--maison {
+    height: $projects-overlay-element-logo-maison-height;
+  }
+
+  &__overlay-logo {
+    fill: $white;
+    height: 100%;
+  }
+
+  &__overlay-title {
+    font-size: $projects-overlay-element-text-font-size;
+    font-weight: $normal;
+    text-align: center;
+    margin: $projects-overlay-element-title-margin;
+  }
+
+  &__overlay-text {
+    max-width: 70%;
+    font-size: $projects-overlay-element-text-font-size;
+    line-height: $projects-overlay-element-text-line-height;
+    margin: $projects-overlay-element-text-margin;
+  }
+}
