@@ -16,6 +16,9 @@
       <Section title-primary-text="Selected" title-secondary-text="projects">
         <Projects :projects="allProjects" />
       </Section>
+      <Section title-primary-text="Places" title-secondary-text="I've worked">
+        <Companies />
+      </Section>
     </main>
     <Footer />
   </section>
@@ -28,6 +31,7 @@ import Component from 'nuxt-class-component';
 import Header from "~/components/header/header";
 import Section from "~/components/section/section";
 import Projects from "~/components/projects/projects";
+import Companies from "~/components/companies/companies";
 import Footer from "~/components/footer/footer";
 
 @Component({
@@ -35,6 +39,7 @@ import Footer from "~/components/footer/footer";
     Header,
     Section,
     Projects,
+    Companies,
     Footer
   }
 })
