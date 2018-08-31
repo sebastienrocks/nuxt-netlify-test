@@ -14,9 +14,7 @@
           <div class="projects__overlay-content">
             <div class="projects__overlay-logo-wrapper" v-html="project.logo"></div>
             <h3 class="projects__overlay-title">
-              <a :href="project.url" target="_blank" rel="noreferrer" class="projects__overlay-link">
-                {{ project.title }}
-              </a>
+              <a :href="project.url" target="_blank" rel="noreferrer" class="projects__overlay-link">{{ project.title }}</a>
               <span v-if="project.company"> - Made with
                 <a :href="project.company.url" target="_blank" rel="noreferrer" class="projects__overlay-link">
                   {{ project.company.name }}

@@ -4,7 +4,7 @@ $projects-overlay-element-content-transition: all 375ms ease;
 $projects-overlay-element-content-transition-delay: 125ms;
 $projects-overlay-element-angle-min-height: 300px;
 $projects-overlay-element-content-padding: 35px 25px;
-$projects-overlay-element-logo-height: 45px;
+$projects-overlay-element-logo-height: 70px;
 $projects-overlay-element-logo-margin: 0 0 10px 0;
 $projects-overlay-element-logo-maison-height: 70px;
 $projects-overlay-element-text-font-size: 14px;
@@ -93,6 +93,15 @@ $projects-overlay-element-text-margin: 0 auto 35px auto;
     height: $projects-overlay-element-logo-height;
     margin: $projects-overlay-element-logo-margin;
     text-align: center;
+
+    //TODO: See if this can't be optimized
+    .projects__logo {
+      max-height: $projects-overlay-element-logo-height;
+    }
+
+    .projects__logo--maison {
+      max-height: $projects-overlay-element-logo-maison-height;
+    }
   }
 
   &__overlay-logo {
