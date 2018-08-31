@@ -4,15 +4,15 @@
       <p class="header__text">Hi, I'm <span class="header__text--blue">Sebastien</span></p>
       <no-ssr class="header__text" :placeholder="firstSlideText">
       <p class="header__text">
-        <transition name="header__slide">
-          <div class="header__text--animated"
+        <transition-group name="header__slide">
+          <strong class="header__text--animated"
                v-for="(text, index) in slideTexts"
                :key="index"
-               v-if="index === currentSlide"
+               v-show="index === currentSlide"
           >
             {{ text }}
-          </div>
-        </transition>
+          </strong>
+        </transition-group>
       </p>
       </no-ssr>
       <p class="header__text">based in London, and I <span class="header__text--red">Rock</span>.</p>
