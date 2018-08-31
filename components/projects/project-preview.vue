@@ -1,5 +1,5 @@
 <template>
-    <div  class="grid__element"
+    <div  class="projects__element"
           :class="getClass(projectIndex)"
           v-html="logo"
           @click="selectProject(projectIndex)">
@@ -17,7 +17,7 @@ export default class ProjectPreview extends Vue {
 
   getClass(index) {
     index = index + 1;
-    return (index === 1 || index === 6) ? `grid__element--big grid__0${index}` : `grid__element--small grid__0${index}`;
+    return (index === 1 || index === 6) ? `projects__element--big projects__grid-0${index}` : `projects__element--small projects__grid-0${index}`;
   }
 
   selectProject(index) {

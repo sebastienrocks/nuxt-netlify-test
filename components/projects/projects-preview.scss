@@ -1,6 +1,3 @@
-//TODO: Review naming
-
-$projects-preview-element-index: 1; //TODO: Test if needed
 $projects-preview-hover-background-index: 2;
 $projects-preview-hover-text-index: 3;
 $projects-preview-hover-background-transition: opacity 275ms ease;
@@ -9,18 +6,20 @@ $projects-preview-hover-text: 'See more';
 $projects-preview-hover-text-transition: all 175ms ease;
 $projects-preview-hover-text-height: 16;
 $projects-preview-hover-text-top: $projects-preview-hover-text-height / 2;
-$projects-preview-hover-text-height-px: #{$projects-preview-hover-text-height}px; //TODO: check this 
-$projects-preview-hover-text-initial-top-position: calc(50% + #{$projects-preview-hover-text-top}px); //TODO: check this
-$projects-preview-hover-text-after-top-position: calc(50% - #{$projects-preview-hover-text-top}px); //TODO: check this
+$projects-preview-hover-text-height-px: #{$projects-preview-hover-text-height}px; 
+$projects-preview-hover-text-initial-top-position: calc(50% + #{$projects-preview-hover-text-top}px);
+$projects-preview-hover-text-after-top-position: calc(50% - #{$projects-preview-hover-text-top}px);
 $projects-preview-logo-height: 65px;
-$projects-preview-logo-height: 80%;
-$projects-preview-logo-maisoon-height: 80px;
+$projects-preview-logo-width: 80%;
+$projects-preview-logo-maison-height: 80px;
 
 .projects {
   &__element {
     position: relative;
-    z-index: $projects-preview-element-index;
     width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     text-align: center;
   
     &:before {
@@ -60,19 +59,29 @@ $projects-preview-logo-maisoon-height: 80px;
       opacity: 1;
     }
 
-    &hover:after {
+    &:hover:after {
       top: $projects-preview-hover-text-after-top-position;
     }
   }
 
-  &__logo {
-    fill: $white;
-    height: $projects-preview-logo-height;
-    max-width: $projects-preview-logo-height;
+  &__element---big {
+    height: 320px;
   }
 
-  &__logo-maison {
-    height: $projects-preview-logo-maisoon-height;
+  &__element--small {
+    height: 160px;
+  }
+
+  &__logo {
+    display: inline-block;
+    vertical-align: middle;
+    fill: $white;
+    height: $projects-preview-logo-height;
+    max-width: $projects-preview-logo-width;
+  }
+
+  &__logo--maison {
+    height: $projects-preview-logo-maison-height;
   }
 
   &__logo--small {

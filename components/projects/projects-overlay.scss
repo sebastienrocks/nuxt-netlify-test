@@ -95,13 +95,14 @@ $projects-overlay-element-text-margin: 0 auto 35px auto;
     text-align: center;
   }
 
-  &__overlay-logo-wrapper--maison {
-    height: $projects-overlay-element-logo-maison-height;
+  &__overlay-logo {
+    height: auto;
+    max-height: 100%;
   }
 
-  &__overlay-logo {
-    fill: $white;
-    height: 100%;
+  &__overlay-logo--maison {
+    height: auto;
+    max-height: $projects-overlay-element-logo-maison-height;
   }
 
   &__overlay-title {
@@ -109,6 +110,11 @@ $projects-overlay-element-text-margin: 0 auto 35px auto;
     font-weight: $normal;
     text-align: center;
     margin: $projects-overlay-element-title-margin;
+  }
+
+  &__overlay-link {
+    color: $white;
+    font-weight: bolder;
   }
 
   &__overlay-text {

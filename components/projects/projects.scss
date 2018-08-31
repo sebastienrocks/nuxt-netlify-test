@@ -1,7 +1,8 @@
 .projects {
+  position: relative;
+  overflow: hidden;
+
   &__grid {
-    position: relative;
-    overflow: hidden;
     display: grid;
     height: 100%;
     grid-template-columns: 1fr 1fr 1fr;

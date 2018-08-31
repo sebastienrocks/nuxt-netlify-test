@@ -1,11 +1,13 @@
 <template>
-  <div class="grid">
-    <ProjectPreview v-for="(project, index) in projects"
-                    :key="index"
-                    :logo="project.logo"
-                    :project-index="index"
-                    @selected-project="showOverlay"
-    />
+  <div class="projects">
+    <div class="projects__grid">
+      <ProjectPreview v-for="(project, index) in projects"
+                      :key="index"
+                      :logo="project.logo"
+                      :project-index="index"
+                      @selected-project="showOverlay"
+      />
+    </div>
     <ProjectOverlay :projects="projects" :active-project="activeProject" @close-overlay="hideOverlay" />
   </div>
 </template>
