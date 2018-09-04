@@ -2,10 +2,12 @@
 @import "@/scss/mixins/background-gradient.scss";
 @import "@/scss/vendor/normalize.scss";
 @import "@/scss/settings/variables.scss";
+@import "@/scss/settings/reset.scss";
 @import "@/scss/layout/global.scss";
 
 
 @import "@/components/button/button.scss";
+@import "@/components/companies/companies.scss";
 @import "@/components/footer/footer.scss";
 @import "@/components/header/header.scss";
 @import "@/components/projects/projects.scss";

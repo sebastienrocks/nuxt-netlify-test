@@ -1,0 +1,79 @@
+.companies {
+  &__grid {
+    display: grid;
+    height: 100%;
+    grid-template-columns: auto auto auto;
+    grid-gap: 15px;
+    align-items: center;
+  }
+
+  &__logo {
+    height: 30px;
+    width: auto;
+    margin-bottom: 15px;
+    fill: $black;
+  }
+
+  &__logo:hover {
+    animation: color-harsh 1s infinite;
+  }
+
+  &__text {
+    line-height: 1.2em;
+  }
+
+  &__more {
+    width: 100%;
+    opacity: .45;
+    text-align: center;
+  }
+
+  &__and-sign {
+    display: inline-block;
+    width: 100%;
+    font-size: 48px;
+    line-height: 1em;
+  } 
+}
+
+@keyframes color-harsh {
+  0% {
+    fill: $bright-blue;
+  }
+
+  20% {
+    fill: $bright-blue;
+  }
+
+  21% {
+    fill: $bright-pink;
+  }
+
+  40% {
+    fill: $bright-pink;
+  }
+
+  41% {
+    fill: $bright-purple;
+  }
+
+  60% {
+    fill: $bright-purple;
+  }
+
+  61% {
+    fill: $bright-green;
+  }
+
+  80% {
+    fill: $bright-green;
+  }
+
+  81% {
+    fill: $bright-yellow;
+  }
+
+  100% {
+    fill: $bright-yellow;
+  }
+}
