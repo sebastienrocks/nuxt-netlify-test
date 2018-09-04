@@ -1,21 +1,31 @@
 
 module.exports = {
   head: {
-    title: 'portfolio',
+    title: 'Sebastien Rocks - A front-end Engineer specializing in Vue.js',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: 'Portfolio of Sebastien Crapoulet' }
+      { hid: 'description', name: 'description', content: 'Portfolio of Sebastien Crapoulet' },
+      { name: "theme-color", content: "#ffffff" },
+      { property: "og:title", content: "Sebastien.rocks - Portfolio" },
+      { prroperty: "og:type", content: "website" },
+      { property: "og:description", content: "Sebastien Crapoulet, a Front-end Engineer specializing in Vue.js and UI enthusiast" },
+      { property: "og:url", content: "https://sebastien.rocks" },
+      { property: "og:image", content: "/static/opengraph.jpg" }
     ],
     link: [
-      { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Nunito:400,400i,600,600i,700' },
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
+      { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Nunito:400,400i,600,600i' },
+      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
+      { rel: 'icon', type: 'image/png', sizes: '32x32', href: '/favicon-32x32.png' },
+      { rel: 'icon', type: 'image/png', sizes: '16x16', href: '/favicon-16x16.png' },
+      { rel: 'maniffest', content: "/manifest.json" },
+      { rel: 'mask-icon', color: '#5bbad5', href: '/safari-pinned-tab.svg' },
     ]
   },
   css: [
     '~/scss/main.scss'
   ],
-  loading: { color: '#3B8070' },
+  loading: { color: '#5bbad5' },
   build: {
     babel: {
       plugins: ['transform-decorators-legacy', 'transform-class-properties']
