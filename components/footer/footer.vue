@@ -8,7 +8,7 @@
         I’m available!
       </strong>
       <address>
-        <Button button-text="Contact Me" button-url='mailto:&#099;&#114;&#097;&#112;&#111;&#117;&#108;&#101;&#116;&#046;&#115;&#101;&#098;&#097;&#115;&#116;&#105;&#101;&#110;&#064;&#103;&#109;&#097;&#105;&#108;&#046;&#099;&#111;&#109;' />
+        <Button button-text="Contact Me" button-url='mailto:crapoulet.sebastien+portfolio@gmail.com' />
       </address>
       <div class="footer__social">
         <div class="footer__text--tiny">
