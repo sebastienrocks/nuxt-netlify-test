@@ -5,6 +5,10 @@
     grid-template-columns: auto auto auto;
     grid-gap: 15px;
     align-items: center;
+  
+    @media(max-width: 768px) {
+      align-items: flex-start; 
+    }
   }
 
   &__logo {
@@ -12,6 +16,10 @@
     width: auto;
     margin-bottom: 15px;
     fill: $black;
+
+    @media(max-width: 768px) {
+      height: 24px; 
+    }
   }
 
   &__logo:hover {
@@ -20,6 +28,10 @@
 
   &__text {
     line-height: 1.3em;
+
+    @media(max-width: 768px) {
+      font-size: 12px; 
+    }
   }
 
   &__more {
