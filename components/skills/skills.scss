@@ -1,0 +1,46 @@
+.skills {
+  &__grid {
+    display: grid;
+    height: 100%;
+    grid-template-columns: auto auto;
+    grid-gap: 15px;
+    margin: 0 -10px;
+  }
+
+  &__list {
+    width: 100%;
+    font-size: 16px;
+    line-height: 1.8em;
+  }
+
+  &__list-element {
+    display: inline-block;
+    width: auto;
+    margin: 0 10px;
+    color: $black;
+  }
+
+  &__list-element--green {
+    color: $bright-green;
+  }
+
+  &__list-element--purple {
+    color: $bright-purple;
+  }
+
+  &__list-element--pink {
+    color: $bright-pink;
+  }
+
+  &__list-element--orange {
+    color: $bright-orange;
+  }
+
+  &__list-element--yellow {
+    color: $bright-yellow;
+  }
+
+  &__list-element--blue {
+    color: $bright-blue;
+  }
+}

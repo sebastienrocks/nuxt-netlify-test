@@ -19,6 +19,9 @@
       <Section title-primary-text="Places" title-secondary-text="I've worked">
         <Companies />
       </Section>
+      <Section title-primary-text="Skills" title-secondary-text="and tools">
+        <Skills />
+      </Section>
     </main>
     <Footer />
   </section>
@@ -32,6 +35,7 @@ import Header from "~/components/header/header";
 import Section from "~/components/section/section";
 import Projects from "~/components/projects/projects";
 import Companies from "~/components/companies/companies";
+import Skills from "~/components/skills/skills";
 import Footer from "~/components/footer/footer";
 
 @Component({
@@ -40,11 +44,13 @@ import Footer from "~/components/footer/footer";
     Section,
     Projects,
     Companies,
+    Skills,
     Footer
   }
 })
 export default class IndexView extends Vue {
   // TODO: Clean / optimize SVGS
+  // TODO: Centralize all data
   allProjects = [
     {
       title: "Maddyness",
