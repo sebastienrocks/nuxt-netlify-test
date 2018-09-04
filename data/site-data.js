@@ -162,11 +162,27 @@ let data = {
     ],
     tools: [
       { 
-        text: "Agile",
+        text: "Agile (Scrum / Kanban)",
+        hovered: false
+      },
+      {
+        text: "Jira",
         hovered: false
       },
       { 
         text: "Git",
+        hovered: false
+      },
+      {
+        text: "CI/CD",
+        hovered: false
+      },
+      {
+        text: "Netlify",
+        hovered: false,
+      },
+      {
+        text: "Jenkins",
         hovered: false
       },
       { 
