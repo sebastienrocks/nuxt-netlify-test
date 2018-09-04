@@ -83,6 +83,10 @@ $projects-overlay-element-text-margin: 0 auto 35px auto;
     width: 100%;
     padding: $projects-overlay-element-content-padding;
     text-align: center;
+
+    @media(max-width: 1100px) {
+      padding: 30px 0;
+    }
   }
 
   &__overlay-logo-wrapper {
@@ -93,9 +97,14 @@ $projects-overlay-element-text-margin: 0 auto 35px auto;
     margin: $projects-overlay-element-logo-margin;
     text-align: center;
 
-    //TODO: See if this can't be optimized
+    @media(max-width: 1100px) {
+      max-width: 60%;
+    }
+
     .projects__logo {
       max-height: $projects-overlay-element-logo-height;
+
+      
     }
 
     .projects__logo--maison {
