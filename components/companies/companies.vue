@@ -1,77 +1,24 @@
 <template functional>
   <div class="companies__grid">
-    <div>
-      <ul>
-        <li>
-          <a href="http://capita.co.uk" target="_blank" rel="noreferrer">
-            <svg class="companies__logo" id="capita-logo" viewBox="0 0 143.3 30.7" width="100%" height="100%">
-              <g>
-                <polygon class="st0" points="116.4,1.2 94.8,1.2 94.8,5.2 102.7,5.2 102.7,29.5 108,29.5 108,5.2 115,5.2 	"></polygon>
-                <path class="st0" d="M66.7,1.2h-8.8v28.3h5.4V19.1h3.5c7.1,0,10.1-4.4,10.1-9C76.9,5.6,73.8,1.2,66.7,1.2z M66.1,15.3h-2.9V5h2.9
-                  c3.9,0,5,1.8,5,5.1C71.1,13.5,70,15.3,66.1,15.3z"></path>
-                <rect x="83.2" y="1.2" class="st0" width="5.4" height="28.3"></rect>
-                <path class="st0" d="M14.6,4.4c2.5,0,4.8,1,6.5,2.1l1.3-3.6c-1.9-1.4-4.8-2.2-7.8-2.2c-4.9,0-9.2,2.5-11.6,6.5
-                  c-1.4,2.4-2.1,5.2-2.1,8.6c0,4.1,1.2,7.5,3.6,10.1c2.5,2.7,5.8,4.1,10,4.1c2,0,4.2-0.3,6.3-0.9l1.5-4.1c-3.3,1.1-6,1.3-7.2,1.3
-                  c-3,0-5.6-1.3-7-4c-0.8-1.6-1.2-3.6-1.2-7c0-3.4,0.5-5.7,1.6-7.5C9.7,5.7,11.9,4.4,14.6,4.4z"></path>
-                <path class="st0" d="M42,1.2h-5.5L26.3,29.5h4.8l2.3-6.5h10.7l2.3,6.5h5.8L42,1.2z M34.8,19.1L38.8,8l3.9,11.1H34.8z"></path>
-                <path class="st0" d="M132,1.2h-5.5l-10.2,28.3h4.8l2.3-6.5h10.7l2.3,6.5h5.8L132,1.2z M124.9,19.1L128.8,8l3.9,11.1H124.9z"></path>
-              </g>
-            </svg>
-          </a>
-        </li>
-        <li class="companies__text">
-          <strong><a href="http://capita.co.uk" target="_blank" rel="noreferrer">Capita</a></strong> - Employee Solutions
-        </li>
-        <li class="companies__text">
-          Front-end Engineer
-        </li>
-        <li class="companies__text">
-          London, United Kingdom
-        </li>
-      </ul>
-    </div>
-    <div>
-      <ul>
-        <li>
-          <a href="http://colorz.fr" target="_blank" rel="noreferrer">
-            <svg class="companies__logo" id="colorz-logo" viewBox="0 0 115 26" width="100%" height="100%">
-              <path d="M114.6,8.2c-0.3,0.4-0.6,0.8-1,1.1c-0.4,0.3-0.9,0.4-1.4,0.4c-0.5,0-1-0.1-1.4-0.4c-0.4-0.3-0.8-0.6-1-1.1s-0.4-0.9-0.4-1.4
-                c0-0.5,0.1-1,0.4-1.4c0.3-0.5,0.6-0.8,1.1-1.1c0.4-0.2,0.9-0.4,1.4-0.4s1,0.1,1.4,0.4c0.4,0.2,0.8,0.6,1.1,1.1
-                c0.3,0.5,0.4,0.9,0.4,1.4C115,7.2,114.9,7.7,114.6,8.2z M114.1,5.6c-0.2-0.4-0.5-0.6-0.8-0.8c-0.4-0.2-0.7-0.3-1.1-0.3
-                c-0.4,0-0.8,0.1-1.1,0.3c-0.4,0.2-0.6,0.5-0.8,0.8c-0.2,0.4-0.3,0.8-0.3,1.2c0,0.4,0.1,0.8,0.3,1.1c0.2,0.4,0.5,0.6,0.8,0.8
-                c0.4,0.2,0.7,0.3,1.1,0.3c0.4,0,0.8-0.1,1.1-0.3s0.6-0.5,0.8-0.8c0.2-0.4,0.3-0.7,0.3-1.1C114.4,6.4,114.3,6,114.1,5.6z M112.9,7.3
-                c0,0,0.1,0.2,0.2,0.4l0.4,0.6h-0.8l-0.3-0.5c-0.2-0.3-0.3-0.5-0.4-0.6s-0.3-0.1-0.4-0.1h-0.1v1.2h-0.7V5.2h0.6c0.6,0,0.9,0,1,0
-                c0.2,0,0.4,0.1,0.5,0.1c0.1,0.1,0.2,0.2,0.3,0.3s0.1,0.3,0.1,0.4c0,0.2-0.1,0.4-0.2,0.6c-0.1,0.2-0.3,0.2-0.6,0.3
-                c0.1,0,0.2,0.1,0.2,0.1C112.8,7.1,112.8,7.2,112.9,7.3z M112.6,6.4c0.1-0.1,0.1-0.2,0.1-0.2c0-0.1,0-0.2-0.1-0.2
-                c0-0.1-0.1-0.1-0.2-0.1c-0.1,0-0.3-0.1-0.7-0.1h-0.2v0.9h0.2c0.4,0,0.6,0,0.7-0.1C112.5,6.5,112.5,6.4,112.6,6.4z M107.9,19.9v5.5
-                H90L98.8,10h-7.4V4.4h16.9l-8.8,15.5H107.9z M84.5,25.4H79V5h5.5v1.5c1.6-1.3,3.5-2,5.5-2V10c-3,0-5.5,2.5-5.5,5.5V25.4z M66.4,26
-                c-6.1,0-11-5-11-11c0-6.1,4.9-11,11-11c6.1,0,11,5,11,11C77.4,21,72.5,26,66.4,26z M66.4,9.4c-3,0-5.5,2.5-5.5,5.5
-                c0,3,2.5,5.5,5.5,5.5c3,0,5.5-2.5,5.5-5.5C71.9,11.9,69.4,9.4,66.4,9.4z M48.3,0.8h5.5v24.6h-5.5V0.8z M35.7,26c-6.1,0-11-5-11-11
-                c0-6.1,4.9-11,11-11c6.1,0,11,5,11,11C46.7,21,41.8,26,35.7,26z M35.7,9.4c-3,0-5.5,2.5-5.5,5.5c0,3,2.5,5.5,5.5,5.5
-                c3,0,5.5-2.5,5.5-5.5C41.2,11.9,38.8,9.4,35.7,9.4z M13,20.5c2.8,0,5.2-1.5,6.4-3.7l4.8,2.8C21.9,23.4,17.8,26,13,26
-                C5.8,26,0,20.2,0,13C0,5.8,5.8,0,13,0c4.8,0,9,2.6,11.2,6.5l-4.8,2.8C18.1,7,15.7,5.5,13,5.5c-4.1,0-7.5,3.4-7.5,7.5
-                C5.5,17.1,8.8,20.5,13,20.5z"></path>
-            </svg>
-          </a>
-        </li>
-        <li class="companies__text">
-          <strong><a href="http://colorz.fr" target="_blank" rel="noreferrer">Colorz</a></strong> - Digital Agency
-        </li>
-        <li class="companies__text">
-          Front-end Developer
-        </li>
-        <li class="companies__text">
-          Paris, France
-        </li>
-      </ul>
-    </div>
-    <div>
-      <ul class="companies__more">
-        <li>
-          <span class="companies__and-sign">&</span>
-          <span>others</span>
-        </li>
-      </ul>
-    </div>
+    <ul v-for="company in props.companies" :key="company.name">
+      <li>
+        <a :href="company.url" target="_blank" rel="noreferrer" v-html="company.logo"></a>
+      </li>
+      <li class="companies__text">
+        <strong><a :href="company.url" target="_blank" rel="noreferrer">{{ company.name }}</a></strong> - {{ company.nameDetails }}
+      </li>
+      <li class="companies__text">
+        {{ company.role }}
+      </li>
+      <li class="companies__text">
+        {{ company.location }}
+      </li>
+    </ul>
+    <ul class="companies__more">
+      <li>
+        <span class="companies__and-sign">&</span>
+        <span>others</span>
+      </li>
+    </ul>
   </div>
 </template>

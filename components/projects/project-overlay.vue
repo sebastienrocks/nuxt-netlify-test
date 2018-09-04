@@ -6,7 +6,7 @@
          :class="showProject(index)"
     >
       <div class="projects__overlay-image-container">
-        <img class="projects__overlay-image" :src="require(`@/assets/images/${project.imageName}.jpg`)" :alt="project.title">
+        <img class="projects__overlay-image" :src="require(`@/static/${project.imageName}.jpg`)" :alt="project.title">
       </div>
       <div class="projects__overlay-content-container">
         <div class="projects__overlay-angle-wrapper" :class="`projects__grid-0${index+1}`">

@@ -1,7 +1,7 @@
 <template>
   <div class="skills__grid">
     <ul class="skills__list">
-      <li v-for="skill in skills"
+      <li v-for="skill in skillsData.skills"
           :key="skill.text"
           class="skills__list-element"
           :class="skill.hovered"
@@ -11,7 +11,7 @@
       </li>
     </ul>
     <ul class="skills__list">
-      <li v-for="tool in tools"
+      <li v-for="tool in skillsData.tools"
           :key="tool.text"
           class="skills__list-element"
           :class="tool.hovered"
@@ -25,128 +25,12 @@
 
 <script>
 import Vue from 'vue';
-import Component from 'nuxt-class-component';
+import { Component, Prop } from 'nuxt-property-decorator';
 
-@Component()
+@Component
 export default class Skills extends Vue {
-  skills = [
-    { 
-      text: "Vue.js",
-      hovered: false
-    },
-    { 
-      text: "Nuxt",
-      hovered: false
-    },
-    { 
-      text: "AngularJS",
-      hovered: false
-    },
-    { 
-      text: "HTML",
-      hovered: false
-    },
-    { 
-      text: "CSS",
-      hovered: false
-    },
-    { 
-      text: "SASS",
-      hovered: false
-    },
-    { 
-      text: "Less",
-      hovered: false
-    },
-    { 
-      text: "Bootstrap",
-      hovered: false
-    },
-    { 
-      text: "WordPress",
-      hovered: false
-    },
-    { 
-      text: "Shopify",
-      hovered: false
-    },
-    { 
-      text: "Webpack",
-      hovered: false
-    },
-    { 
-      text: "Parcel",
-      hovered: false
-    },
-    { 
-      text: "Gulp",
-      hovered: false
-    },
-    { 
-      text: "Grunt",
-      hovered: false
-    },
-    { 
-      text: "CSS3 Animations",
-      hovered: false
-    },
-    { 
-      text: "Greensock",
-      hovered: false
-    },
-    { 
-      text: "Animejs",
-      hovered: false
-    },
-    { 
-      text: "Highcharts",
-      hovered: false
-    },
-    { 
-      text: "Accessibility",
-      hovered: false
-    }
-  ];
-
-  tools = [
-    { 
-      text: "Agile",
-      hovered: false
-    },
-    { 
-      text: "Git",
-      hovered: false
-    },
-    { 
-      text: "Photoshop",
-      hovered: false
-    },
-    { 
-      text: "Illustrator",
-      hovered: false
-    },
-    { 
-      text: "InDesign",
-      hovered: false
-    },
-    { 
-      text: "After Effects",
-      hovered: false
-    },
-    { 
-      text: "Vagrant",
-      hovered: false
-    },
-    { 
-      text: "Browserstack",
-      hovered: false
-    },
-    { 
-      text: "VSCode",
-      hovered: false
-    },
-  ]
-
+  @Prop({ type: Object }) skillsData
+  
   hoverColorClasses = [
     "skills__list-element--green",
     "skills__list-element--purple",
