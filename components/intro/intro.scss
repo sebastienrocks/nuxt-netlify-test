@@ -1,7 +1,11 @@
+// TODO: Review margin and color global variables
+$intro-text-font-size: 16px;
+$intro-text-line-height: 30px;
+
 .intro {
   &__text {
-    font-size: 16px;
-    line-height: 30px;
+    font-size: $intro-text-font-size;
+    line-height: $intro-text-line-height;
     color: $black;
   }
 
