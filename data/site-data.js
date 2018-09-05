@@ -1,4 +1,10 @@
 let data = {
+  introTexts: [
+    "I am a passionate front-end developer & designer who has relocated to London from Paris. My career originates in  IT, however after reaching a point where I realized the experience was not entirely in coherence with my ambitions I decided to undertake studies in web and print design.",
+    "Further down that path I became curious about front-end development and quickly dove into learning HTML & CSS.",
+    "Since then I have been working commercially for over 5 years, with the past year focusing on Vue.js, building various applications at Capita Employee Solutions.",
+    "I keep myself up to date with the latest trends in development, devoting my time to learning new technologies. Whilst doing so, I work with clients on a global scale, crafting beautiful custom fit websites."
+  ],
   allProjects: [
     {
       title: "Maddyness",

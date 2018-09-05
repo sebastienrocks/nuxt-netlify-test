@@ -1,0 +1,11 @@
+.intro {
+  &__text {
+    font-size: 16px;
+    line-height: 30px;
+    color: $black;
+  }
+
+  &__text + &__text {
+    margin-top: $p-margin;
+  }
+}
