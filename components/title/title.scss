@@ -1,6 +1,9 @@
+// TODO: Review global variables
+$title-font-size: 30px;
+
 .title {
   &__text {
-    font-size: 30px;
+    font-size: $title-font-size;
     font-weight: $normal;
     color: $dark-blue;
     margin: 0;

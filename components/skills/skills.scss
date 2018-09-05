@@ -1,22 +1,29 @@
+// TODO: Review global variables
+$skills-margin: 10px;
+$skills-font-size: 16px;
+$skills-line-height: 1.8em;
+$skills-grid-gap: 15px;
+$skills-grid-margin: -$skills-margin;
+
 .skills {
   &__grid {
     display: grid;
     height: 100%;
     grid-template-columns: auto auto;
-    grid-gap: 15px;
-    margin: 0 -10px;
+    grid-gap: $skills-grid-gap;
+    margin: 0 $skills-grid-margin;
   }
 
   &__list {
     width: 100%;
-    font-size: 16px;
-    line-height: 1.8em;
+    font-size: $skills-font-size;
+    line-height: $skills-line-height;
   }
 
   &__list-element {
     display: inline-block;
     width: auto;
-    margin: 0 10px;
+    margin: 0 $skills-margin;
     color: $black;
   }
 

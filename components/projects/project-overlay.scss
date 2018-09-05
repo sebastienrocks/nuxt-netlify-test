@@ -1,5 +1,7 @@
+// TODO: Review global variabbles use global media query
 $projects-overlay-element-index: 4;
 $projects-overlay-element-image-transition: all 275ms ease;
+$projects-overlay-element-close-link-right-position: 25px;
 $projects-overlay-element-content-transition: all 375ms ease;
 $projects-overlay-element-content-transition-delay: 125ms;
 $projects-overlay-element-angle-min-height: 300px;
@@ -25,7 +27,7 @@ $projects-overlay-element-text-margin: 0 auto 35px auto;
 
   &__overlay-close-link {
     position: absolute;
-    right: 25px; $projects-overlay-element-close-link-right-position: 25px;
+    right: $projects-overlay-element-close-link-right-position;
     font-weight: $bold;
     color: $white;
   }
@@ -34,7 +36,7 @@ $projects-overlay-element-text-margin: 0 auto 35px auto;
     visibility: visible;
   }
 
-  &__overlay--show &__overlay-image-container, //TODO: Check this output
+  &__overlay--show &__overlay-image-container,
   &__overlay--show &__overlay-content-container {
     transform: translateY(0) translateZ(0);
     backface-visibility: hidden;
@@ -103,8 +105,6 @@ $projects-overlay-element-text-margin: 0 auto 35px auto;
 
     .projects__logo {
       max-height: $projects-overlay-element-logo-height;
-
-      
     }
 
     .projects__logo--maison {
