@@ -90,6 +90,18 @@ let data = {
   skills: {
     skills: [
       { 
+        text: "HTML/HTML5",
+        hovered: false
+      },
+      { 
+        text: "CSS/CSS3",
+        hovered: false
+      },
+      {
+        text: "Javascript (ES6)",
+        hovered: false,
+      },
+      { 
         text: "Vue.js",
         hovered: false
       },
@@ -101,12 +113,16 @@ let data = {
         text: "AngularJS",
         hovered: false
       },
-      { 
-        text: "HTML",
+      {
+        text: "Unit tests (Mocha + Chai)",
         hovered: false
       },
-      { 
-        text: "CSS",
+      {
+        text: "E2E testing (protractor)",
+        hovered: false
+      },
+      {
+        text: "jQuery",
         hovered: false
       },
       { 
@@ -127,14 +143,6 @@ let data = {
       },
       { 
         text: "Shopify",
-        hovered: false
-      },
-      { 
-        text: "Webpack",
-        hovered: false
-      },
-      { 
-        text: "Parcel",
         hovered: false
       },
       { 
@@ -178,6 +186,22 @@ let data = {
       { 
         text: "Git",
         hovered: false
+      },
+      { 
+        text: "Webpack",
+        hovered: false
+      },
+      { 
+        text: "Parcel",
+        hovered: false
+      },
+      {
+        text: "Babel",
+        hovered: false,
+      },
+      {
+        text: "ESLint",
+        hovered: false,
       },
       {
         text: "CI/CD",
