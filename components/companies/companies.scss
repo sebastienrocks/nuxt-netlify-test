@@ -1,9 +1,23 @@
+// TODO: Review color variables, use global media-query
+
+$companies-grid-template: auto auto auto;
+$companies-grid-gap: 15px;
+$companies-logo-height: 30px;
+$companies-logo-height-mobile: 24px;
+$companies-logo-margin: 15px;
+$companies-logo-animation: color-harsh 1s infinite;
+$companies-text-line-height: 1.3em;
+$companies-text-mobile-font-size: 12px;
+$companies-more-opacity: .45;
+$companies-and-sign-font-size: 48px;
+$companies-and-sign-line-height: 1em;
+
 .companies {
   &__grid {
     display: grid;
     height: 100%;
-    grid-template-columns: auto auto auto;
-    grid-gap: 15px;
+    grid-template-columns: $companies-grid-template;
+    grid-gap: $companies-grid-gap;
     align-items: center;
   
     @media(max-width: 768px) {
@@ -12,39 +26,39 @@
   }
 
   &__logo {
-    height: 30px;
+    height: $companies-logo-height;
     width: auto;
-    margin-bottom: 15px;
+    margin-bottom: $companies-logo-margin;
     fill: $black;
 
     @media(max-width: 768px) {
-      height: 24px; 
+      height: $companies-logo-height-mobile; 
     }
   }
 
   &__logo:hover {
-    animation: color-harsh 1s infinite;
+    animation: $companies-logo-animation;
   }
 
   &__text {
-    line-height: 1.3em;
+    line-height: $companies-text-line-height;
 
     @media(max-width: 768px) {
-      font-size: 12px; 
+      font-size: $companies-text-mobile-font-size;
     }
   }
 
   &__more {
     width: 100%;
-    opacity: .45;
+    opacity: $companies-more-opacity;
     text-align: center;
   }
 
   &__and-sign {
     display: inline-block;
     width: 100%;
-    font-size: 48px;
-    line-height: 1em;
+    font-size: $companies-and-sign-font-size;
+    line-height: $companies-and-sign-line-height;
   } 
 }
 
