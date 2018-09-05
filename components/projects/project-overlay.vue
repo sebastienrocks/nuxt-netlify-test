@@ -24,7 +24,7 @@
             <p class="projects__overlay-text">
               {{ project.description }}
             </p>
-            <Button  :button-url="project.url" button-text="View Website" extra-class="project-button" />
+            <Button  :button-url="project.url" button-text="View Website" extra-class="button--project" />
           </div>
         </div>
       </div>
