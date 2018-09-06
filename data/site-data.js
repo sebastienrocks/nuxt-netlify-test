@@ -122,6 +122,10 @@ let data = {
         hovered: false
       },
       {
+        text: "TDD/BDD",
+        hovered: false
+      },
+      {
         text: "jQuery",
         hovered: false
       },
