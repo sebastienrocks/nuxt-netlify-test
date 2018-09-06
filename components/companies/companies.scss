@@ -18,11 +18,6 @@ $companies-and-sign-line-height: 1em;
     height: 100%;
     grid-template-columns: $companies-grid-template;
     grid-gap: $companies-grid-gap;
-    align-items: center;
-  
-    @media(max-width: 768px) {
-      align-items: flex-start; 
-    }
   }
 
   &__logo {
@@ -52,6 +47,7 @@ $companies-and-sign-line-height: 1em;
     width: 100%;
     opacity: $companies-more-opacity;
     text-align: center;
+    align-self: center;
   }
 
   &__and-sign {
