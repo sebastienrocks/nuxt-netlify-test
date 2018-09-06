@@ -1,4 +1,4 @@
-// TODO: Review color variables, use global media-query
+// TODO: use global media-query
 
 $companies-grid-template: auto auto auto;
 $companies-grid-gap: 15px;
@@ -29,7 +29,7 @@ $companies-and-sign-line-height: 1em;
     height: $companies-logo-height;
     width: auto;
     margin-bottom: $companies-logo-margin;
-    fill: $black;
+    fill: $site-color-black;
 
     @media(max-width: 768px) {
       height: $companies-logo-height-mobile; 
@@ -64,42 +64,42 @@ $companies-and-sign-line-height: 1em;
 
 @keyframes color-harsh {
   0% {
-    fill: $bright-blue;
+    fill: $site-color-bright-blue;
   }
 
   20% {
-    fill: $bright-blue;
+    fill: $site-color-bright-blue;
   }
 
   21% {
-    fill: $bright-pink;
+    fill: $site-color-bright-pink;
   }
 
   40% {
-    fill: $bright-pink;
+    fill: $site-color-bright-pink;
   }
 
   41% {
-    fill: $bright-purple;
+    fill: $site-color-bright-purple;
   }
 
   60% {
-    fill: $bright-purple;
+    fill: $site-color-bright-purple;
   }
 
   61% {
-    fill: $bright-green;
+    fill: $site-color-bright-green;
   }
 
   80% {
-    fill: $bright-green;
+    fill: $site-color-bright-green;
   }
 
   81% {
-    fill: $bright-yellow;
+    fill: $site-color-bright-yellow;
   }
 
   100% {
-    fill: $bright-yellow;
+    fill: $site-color-bright-yellow;
   }
 }

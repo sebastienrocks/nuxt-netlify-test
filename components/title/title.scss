@@ -1,15 +1,14 @@
-// TODO: Review global variables
-$title-font-size: 30px;
+$title-font-size: $site-font-family-size*2;
 
 .title {
   &__text {
     font-size: $title-font-size;
-    font-weight: $normal;
-    color: $dark-blue;
+    font-weight: $site-font-weight-normal;
+    color: $site-color-dark-blue;
     margin: 0;
   }
 
   &__text--red {
-    color: $dark-red;
+    color: $site-color-dark-red;
   }
 }

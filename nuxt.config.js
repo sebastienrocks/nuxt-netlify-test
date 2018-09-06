@@ -14,7 +14,7 @@ module.exports = {
       { property: "og:image", content: "/static/opengraph.jpg" }
     ],
     link: [
-      { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Nunito:400,400i,600,600i' },
+      { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Nunito:400,600' },
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
       { rel: 'maniffest', content: "/manifest.json" },
       { rel: 'mask-icon', color: '#5bbad5', href: '/safari-pinned-tab.svg' },

@@ -1,15 +1,14 @@
-// TODO: Review margin and color global variables
-$intro-text-font-size: 16px;
 $intro-text-line-height: 30px;
+$intro-text-margin-top: 20px;
 
 .intro {
   &__text {
-    font-size: $intro-text-font-size;
+    font-size: $site-font-family-size;
     line-height: $intro-text-line-height;
-    color: $black;
+    color: $site-color-black;
   }
 
   &__text + &__text {
-    margin-top: $p-margin;
+    margin-top: $intro-text-margin-top;
   }
 }

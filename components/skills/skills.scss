@@ -1,4 +1,3 @@
-// TODO: Review global variables
 $skills-margin: 10px;
 $skills-font-size: 16px;
 $skills-line-height: 1.8em;
@@ -24,30 +23,30 @@ $skills-grid-margin: -$skills-margin;
     display: inline-block;
     width: auto;
     margin: 0 $skills-margin;
-    color: $black;
+    color: $site-color-black;
   }
 
   &__list-element--green {
-    color: $bright-green;
+    color: $site-color-bright-green;
   }
 
   &__list-element--purple {
-    color: $bright-purple;
+    color: $site-color-bright-purple;
   }
 
   &__list-element--pink {
-    color: $bright-pink;
+    color: $site-color-bright-pink;
   }
 
   &__list-element--orange {
-    color: $bright-orange;
+    color: $site-color-bright-orange;
   }
 
   &__list-element--yellow {
-    color: $bright-yellow;
+    color: $site-color-bright-yellow;
   }
 
   &__list-element--blue {
-    color: $bright-blue;
+    color: $site-color-bright-blue;
   }
 }

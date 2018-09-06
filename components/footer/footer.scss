@@ -1,4 +1,4 @@
-$footer-padding-top: calc(120px + #{$header-neg});
+$footer-padding-top: calc(120px + #{$site-header-angle-size});
 $footer-padding-bottom: 180px;
 $footer-padding-sides: 20px;
 $footer-font-size: 60px;
@@ -13,8 +13,8 @@ $footer-line-height: 86px;
     @include background-gradient();
 
     @media(max-width: 768px) {
-      $header-neg: 75px;
-      $footer-padding-top: calc(60px + #{$header-neg});
+      $site-header-angle-size: 75px;
+      $footer-padding-top: calc(60px + #{$site-header-angle-size});
       $footer-padding-bottom: 90px;
 
       padding: $footer-padding-top $footer-padding-sides $footer-padding-bottom $footer-padding-sides;
@@ -23,7 +23,7 @@ $footer-line-height: 86px;
   }
 
   &__center {
-    color: $white;
+    color: $site-color-white;
   }
 
   &__text {
@@ -47,7 +47,7 @@ $footer-line-height: 86px;
     vertical-align: top;
     width: 100%;
     font-size: 24px;
-    color: $white;
+    color: $site-color-white;
     margin: 0 0 50px 0;
 
     @media(max-width: 768px) {
@@ -60,13 +60,13 @@ $footer-line-height: 86px;
     vertical-align: top;
     width: 100%;
     font-size: 18px;
-    color: $white;
+    color: $site-color-white;
     margin-bottom: 15px;
   }
 
   &__text--blue {
-    font-weight: $semibold;
-    color: $dark-blue;
+    font-weight: $site-font-weight-semibold;
+    color: $site-color-dark-blue;
   }
 
   &__social {
@@ -88,7 +88,7 @@ $footer-line-height: 86px;
   }
 
   &__icon {
-      fill: $white;
+      fill: $site-color-white;
       height: 24px;
       transform: translateY(0);
       transition: all 125ms ease;

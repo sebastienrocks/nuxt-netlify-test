@@ -13,31 +13,31 @@
 
   &__grid-01 {
     grid-area: first;
-    background-color: $bright-blue;
+    background-color: $site-color-bright-blue;
   }
 
   &__grid-02 {
     grid-area: second;
-    background-color: $bright-purple;
+    background-color: $site-color-bright-purple;
   }
 
   &__grid-03 {
     grid-area: third;
-    background-color: $bright-pink;
+    background-color: $site-color-bright-pink;
   }
 
   &__grid-04 {
     grid-area: fourth;
-    background-color: $bright-orange;
+    background-color: $site-color-bright-orange;
   }
 
   &__grid-05 {
     grid-area: fifth;
-    background-color: $bright-yellow;
+    background-color: $site-color-bright-yellow;
   }
 
   &__grid-06 {
     grid-area: sixth;
-    background-color: $bright-green;  
+    background-color: $site-color-bright-green;  
   }
 }

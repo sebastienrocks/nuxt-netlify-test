@@ -1,7 +1,9 @@
 $projects-preview-hover-background-index: 2;
 $projects-preview-hover-text-index: 3;
 $projects-preview-hover-background-transition: opacity 275ms ease;
-$projects-preview-hover-background-gradient: radial-gradient(ellipse at center, $light-grey 0%, $dark-grey 100%);
+$projects-preview-light-grey: rgba($site-color-black, .5);
+$projects-preview-dark-grey: rgba($site-color-black, .7);
+$projects-preview-hover-background-gradient: radial-gradient(ellipse at center, $projects-preview-light-grey 0%, $projects-preview-dark-grey 100%);
 $projects-preview-hover-text: 'See more';
 $projects-preview-hover-text-transition: all 175ms ease;
 $projects-preview-hover-text-height: 16;
@@ -12,6 +14,9 @@ $projects-preview-hover-text-after-top-position: calc(50% - #{$projects-preview-
 $projects-preview-logo-height: 65px;
 $projects-preview-logo-width: 80%;
 $projects-preview-logo-maison-height: 80px;
+$projects-preview-card-padding: 15px;
+$projects-preview-big-card: 310px;
+$projects-preview-small-card: ($projects-preview-card-padding/2)-($projects-preview-card-padding/2);
 
 .projects {
   &__element {
@@ -37,10 +42,10 @@ $projects-preview-logo-maison-height: 80px;
       height: $projects-preview-hover-text-height-px;
       line-height: $projects-preview-hover-text-height-px;
       top: $projects-preview-hover-text-initial-top-position;
-      color: $white;
-      font-family: $font;
-      font-weight: $semibold;
-      font-size: $font-size;
+      color: $site-color-white;
+      font-family: $site-font-family;
+      font-weight: $site-font-weight-semibold;
+      font-size: $site-font-family-size;
 
       transition: $projects-preview-hover-text-transition;
     }
@@ -75,7 +80,7 @@ $projects-preview-logo-maison-height: 80px;
   &__logo {
     display: inline-block;
     vertical-align: middle;
-    fill: $white;
+    fill: $site-color-white;
     height: $projects-preview-logo-height;
     max-width: $projects-preview-logo-width;
   }
@@ -85,12 +90,12 @@ $projects-preview-logo-maison-height: 80px;
   }
 
   &__logo--small {
-    height: $small-card;
-    line-height: $small-card;
+    height: $projects-preview-small-card;
+    line-height: $projects-preview-small-card;
   }
 
   &__logo--big {
-    height: $big-card;
-    line-height: $big-card;
+    height: $projects-preview-big-card;
+    line-height: $projects-preview-big-card;
   }
 }

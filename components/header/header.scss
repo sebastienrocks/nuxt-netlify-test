@@ -1,5 +1,5 @@
 $header-padding-top: 170px;
-$header-padding-bottom: calc(120px + #{$header-neg});
+$header-padding-bottom: calc(120px + #{$site-header-angle-size});
 $header-padding-sides: 20px;
 $header-font-size: 60px;
 $header-slide-height: 86px;
@@ -15,15 +15,15 @@ $header-slide-transform-size: 30px;
 
     @media(max-width: 768px) {
       $header-padding-top: 85px;
-      $header-neg: 75px;
-      $header-padding-bottom: calc(60px + #{$header-neg});
+      $site-header-angle-size: 75px;
+      $header-padding-bottom: calc(60px + #{$site-header-angle-size});
 
       padding: $header-padding-top $header-padding-sides $header-padding-bottom $header-padding-sides;
     }
   }
 
   &__center {
-    color: $white;
+    color: $site-color-white;
   }
 
   &__text {
@@ -47,15 +47,15 @@ $header-slide-transform-size: 30px;
 
   &__text--blue,
   &__text--red {
-    font-weight: $semibold;
+    font-weight: $site-font-weight-semibold;
   }
 
   &__text--blue {
-    color: $dark-blue;
+    color: $site-color-dark-blue;
   }
 
   &__text--red {
-    color: $dark-red;
+    color: $site-color-dark-red;
   }
 
   &__text--animated {

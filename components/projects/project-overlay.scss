@@ -1,4 +1,4 @@
-// TODO: Review global variabbles use global media query
+// TODO: use global media query
 $projects-overlay-element-index: 4;
 $projects-overlay-element-image-transition: all 275ms ease;
 $projects-overlay-element-close-link-right-position: 25px;
@@ -28,8 +28,8 @@ $projects-overlay-element-text-margin: 0 auto 35px auto;
   &__overlay-close-link {
     position: absolute;
     right: $projects-overlay-element-close-link-right-position;
-    font-weight: $bold;
-    color: $white;
+    font-weight: $site-font-weight-semibold;
+    color: $site-color-white;
   }
 
   &__overlay--show {
@@ -66,7 +66,7 @@ $projects-overlay-element-text-margin: 0 auto 35px auto;
     left: 0;
     z-index: 6; $projects-overlay-element-content-index: 6;
     width: 100%;
-    color: $white;
+    color: $site-color-white;
     transform: translateY(110%);
     transition: $projects-overlay-element-content-transition; 
     transition-delay: $projects-overlay-element-content-transition-delay; 
@@ -124,13 +124,13 @@ $projects-overlay-element-text-margin: 0 auto 35px auto;
 
   &__overlay-title {
     font-size: $projects-overlay-element-text-font-size;
-    font-weight: $normal;
+    font-weight: $site-font-weight-normal;
     text-align: center;
     margin: $projects-overlay-element-title-margin;
   }
 
   &__overlay-link {
-    color: $white;
+    color: $site-color-white;
     font-weight: bolder;
   }
 

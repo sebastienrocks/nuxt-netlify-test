@@ -1,29 +1,20 @@
-$white         : #ffffff;
-$bg-white      : #cdd2e0;
-$black         : #1d1d1d;
-$light-grey    : rgba($black, .5);
-$dark-grey     : rgba($black, .7);
-$dark-blue     : #373f61;
-$dark-red      : #f05656;
-
-$bright-green  : #63d56d;
-$bright-purple : #9b59b6;
-$bright-pink   : #ec3971;
-$bright-orange : #e76055;
-$bright-yellow : #f3b459;
-$bright-blue   : #00c2f4;
+// Colors //
+$site-color-white: #ffffff;
+$site-color-black: #1d1d1d;
+$site-color-dark-blue: #373f61;
+$site-color-dark-red: #f05656;
+$site-color-bright-green: #63d56d;
+$site-color-bright-purple: #9b59b6;
+$site-color-bright-pink: #ec3971;
+$site-color-bright-orange: #e76055;
+$site-color-bright-yellow: #f3b459;
+$site-color-bright-blue: #00c2f4;
 
 // Fonts //
-$font     : 'Nunito', arial, sans-serif;
-$normal   : 400;
-$semibold : 600;
-$bold     : 700;
+$site-font-family: 'Nunito', arial, sans-serif;
+$site-font-weight-normal: 400;
+$site-font-weight-semibold: 600;
 
 // Sizes //
-$header-neg     : 125px;
-$p-margin       : 20px;
-$section-margin : 50px;
-$grid-padding   : 15px;
-$big-card       : 310px;
-$small-card     : ($big-card/2)-($grid-padding/2);
-$font-size      : 16px;
+$site-header-angle-size: 125px;
+$site-font-family-size: 16px;
